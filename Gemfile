@@ -33,10 +33,11 @@ gem "fog-aws"
 
 gem "figaro"
 
-group :production do
-	gem 'pg'
-	gem 'rails_12factor'
-end
+
+gem 'rails_12factor', group: :production
+
+gem 'pg', group: :production
+
 
 group :development, :test do
 	gem 'sqlite3'
