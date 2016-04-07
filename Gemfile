@@ -38,6 +38,7 @@ gem 'rails_12factor', group: :production
 
 gem 'pg', group: :production
 
+gem 'devise'
 
 group :development, :test do
 	gem 'sqlite3'
