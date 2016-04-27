@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :listings do
-    resources :orders
+    resources :orders, only: [:new, :create]
 end
 
 
@@ -10,12 +10,11 @@ end
   get 'page/contact'
 
   get 'pages/contact'
-
   get 'pages/about'
-
   get 'pages/contat'
-
   get 'seller' => "listings#seller"
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
 
   root 'listings#index'
 

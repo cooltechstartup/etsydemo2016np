@@ -32,7 +32,7 @@ gem "mini_magick"
 gem "fog-aws"
 
 gem "figaro"
-
+gem 'stripe'
 
 gem 'rails_12factor', group: :production
 
